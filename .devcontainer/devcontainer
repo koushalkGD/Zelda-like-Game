@@ -1,0 +1,16 @@
+{
+  "name": "CPP Game Demo",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  "extensions": [
+    "ms-vscode.cpptools",
+    "ms-vscode.cmake-tools",
+    "vadimcn.vscode-lldb"
+  ],
+  "features": {},
+  "remoteUser": "vscode"
+}
