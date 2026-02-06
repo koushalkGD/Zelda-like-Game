@@ -3,7 +3,7 @@
 CXX := g++
 CXXFLAGS := -std=c++17 -Wall -Wextra -O2
 LIBS := -lsfml-graphics -lsfml-window -lsfml-system
-SRC := src/main.cpp
+SRC := src/main.cpp src/Game.cpp
 OUT := bin/game
 
 .PHONY: all run clean
