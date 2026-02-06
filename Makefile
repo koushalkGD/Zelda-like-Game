@@ -14,7 +14,12 @@ $(OUT): $(SRC)
 > @mkdir -p $(dir $(OUT))
 > $(CXX) $(CXXFLAGS) $(SRC) -o $(OUT) $(LIBS)
 
+#LOCAL RUN (real window)
 run: all
+> ./$(OUT)
+
+#CODESPACE RUN (virtual display)
+run-headless: all
 > xvfb-run -s "-screen 0 800x600x24" ./$(OUT)
 
 clean:
