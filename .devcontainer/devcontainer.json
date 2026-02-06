@@ -1,0 +1,23 @@
+{
+  "$schema": "https://raw.githubusercontent.com/devcontainers/spec/main/schemas/devContainer.schema.json",
+  "name": "CPP Game Dev (SFML)",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+
+  // Editor-related things go under customizations.vscode
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      },
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-vscode.cmake-tools"
+      ]
+    }
+  },
+
+  // Container runtime/user options
+  "remoteUser": "vscode"
+}
