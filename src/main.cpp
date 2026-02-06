@@ -9,7 +9,7 @@ int main()
   );
 
   //control the framerate
-  window.setFreamerateLimit(60);
+  window.setFramerateLimit(60);
 
   //Main Game loop
   while (window.isOpen())
@@ -17,7 +17,7 @@ int main()
       sf::Event event;
 
       // ----Input & Events----
-      while (window.pllEvent(event)){
+      while (window.pollEvent(event)){
         if (event.type == sf::Event::Closed){
           window.close();
         }
